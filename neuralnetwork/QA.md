@@ -65,3 +65,13 @@ rand() * 2 * episilon - episilon
 ## 10.visual theta1 的意义在哪里?
 
 ## 11.fminunc vs fmincg
+
+## sum(matric, dimention)
+## max(matric, [], dimention)
+## eye(dimention)(matrics,:)
+
+
+## 12.求解 求解 cost 直接 使用了vectorization ，求解 lambda 和 gradient 时候也可以使用vectorization，避免使用 for 循环，提高代码质量能？如果可以，该如何做？
+fminunc fmincg 的实现逻辑是怎样的？  sigmoid 的cost function 不同于 linear regression 的 MSE(mean square error)，以为 sigmoid(x) > 0 and 0 < y < 1
+所以 costfunction = -y*log(a)-(1-y)*log(1-a) 是一定为正数的(会影响到最后的 gradient 的正负号)
+为什么 logistics regress 的 cost function 是除以 numberoffeature 但是 lambda 除以 2*numberoffeature
