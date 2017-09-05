@@ -9,7 +9,7 @@
 # 3.步骤：1.加载数据集合 ex4data1.mat ，选取前100行数据，显示 25*25的图像阵列，每个图片的像素是25*25 
 #         2.FB,计算 costfunction
 
-···
+```
    初始化 cost = 0
    for i=1:numberOfTrainningSet
         % 增加 bias 列向量
