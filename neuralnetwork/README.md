@@ -30,7 +30,7 @@
    %% while bias has no business with this, so we exclude bias temr from regularization.
 ```
         3.计算 δ，利用 BP 求解 min(cost)， 调参
-···
+```
 为什么要计算 δ，δ是什么含义
 根据神经网络的模型可以知道 从 第l层 传导 到第 l+1 层 包含 input x 中间参数 z, 激活值a, 以及激活函数f()
 数学模型为 a(l+1) = f(z(l+1)) 
